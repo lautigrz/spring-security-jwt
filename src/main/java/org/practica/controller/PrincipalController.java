@@ -33,12 +33,12 @@ public class PrincipalController {
     @GetMapping("/notSecured")
     public String getNotSecured(){
 
-        return passwordEncoder.encode("password");
+        return "no seguro";
     }
 
     @GetMapping("/secured")
     public String getSecured(){
-        return "Secured";
+        return "Seguro";
     }
 
     @PostMapping("/createUser")

@@ -23,9 +23,8 @@ import java.util.Map;
 
 public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
-
     private JwtUtils jwtUtils;
-    private static final Logger logger = LoggerFactory.getLogger(JwtAuthenticationFilter.class);
+
 
     public JwtAuthenticationFilter(JwtUtils jwtUtils) {
         this.jwtUtils = jwtUtils;
